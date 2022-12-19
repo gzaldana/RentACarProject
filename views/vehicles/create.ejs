@@ -1,0 +1,557 @@
+<%- include layouts/header.ejs %>
+<main>
+  <article>
+
+     <!-- 
+        - FORMULARIO
+      -->
+      <section class="section hero alig" id="home">
+        <div class="container">
+        <form class="form-subscribe" id="create-vehiculos" data-sb-form-api-token="API_TOKEN" action="/vehicles/create" method="post">
+              <div class="formSingUp">
+                <h1 class="h1SingUp">Insert a New Vehicule</h1>
+                <hr class="hrSingUp">
+                <br>
+                <input class="inputText" type="text" placeholder="Enter Name" name="name" required>  
+                <br>
+                <input class="inputText" type="text" placeholder="http://localhost:3000/ejemplo.jpg" name="image" required>
+                  <br>
+                <input class="inputText" type="text" placeholder="pasajeros" name="pasajeros" required>
+                  <br>
+                  <input class="inputText" type="text" placeholder="km" name="km" required>
+                  <br>
+                  <br>
+                  <input class="inputText" type="text" placeholder="year" name="year" required>
+                  <br>
+                  <br>
+                  <input class="inputText" type="text" placeholder="precio" name="precio" required>
+                  <br>
+                  <br>
+                  <input class="inputText" type="text" placeholder="estado" name="estado" required>
+                  <br>
+                  <br>
+                  <input class="inputText" type="text" placeholder="combustible" name="combustible" required>
+                  <br>
+                  <br>
+                  <input class="inputText" type="text" placeholder="tipo" name="tipo" required>
+                  <br>
+                  
+                <div class="clearfix">
+                  <button type="button" class="cancelbtn">Cancel</button>
+                  <button type="submit" class="signupbtn">Send</button>
+                </div>
+              </div>
+            </form>
+          </div>
+      </section>
+
+      <!-- FIN FORMULARIO -->
+      <section class="section hero alig" id="home">
+        <div class="container">
+
+          <div class="hero-content">
+            <h2 class="h1 hero-title"> Tenemos los mejores autos de Costa Rica</h2>
+
+            <p class="hero-text">
+                Desde cualquier parte del mundo nos puedes hacer reserva
+            </p>
+          </div>
+
+          <div class="hero-banner"></div>
+
+          <form action="" class="hero-form">
+
+            <div class="input-wrapper">
+              <label for="input-1" class="input-label">Carro, modelo, y marca</label>
+
+              <input type="text" name="car-model" id="input-1" class="input-field"
+                placeholder="Què tipo de carro buscas?">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="input-2" class="input-label">Monto máximo de dinero</label>
+
+              <input type="text" name="monthly-pay" id="input-2" class="input-field" placeholder="Agrega el monto en  $">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="input-3" class="input-label">Make Year</label>
+
+              <input type="text" name="year" id="input-3" class="input-field" placeholder="Add a minimal make year">
+            </div>
+
+            <button type="submit" class="btn">Buscar</button>
+
+          </form>
+
+        </div>
+      </section>
+
+
+    <!-- 
+      - #HERO
+    -->
+
+    <section class="section hero" id="home">
+      <div class="container">
+
+        <div class="hero-content">
+          <h2 class="h1 hero-title"> Tenemos los mejores autos de Costa Rica</h2>
+
+          <p class="hero-text">
+              Desde cualquier parte del mundo nos puedes hacer reserva
+          </p>
+        </div>
+
+        <div class="hero-banner"></div>
+
+        <form action="" class="hero-form">
+
+          <div class="input-wrapper">
+            <label for="input-1" class="input-label">Carro, modelo, y marca</label>
+
+            <input type="text" name="car-model" id="input-1" class="input-field"
+              placeholder="Què tipo de carro buscas?">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="input-2" class="input-label">Monto máximo de dinero</label>
+
+            <input type="text" name="monthly-pay" id="input-2" class="input-field" placeholder="Agrega el monto en  $">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="input-3" class="input-label">Make Year</label>
+
+            <input type="text" name="year" id="input-3" class="input-field" placeholder="Add a minimal make year">
+          </div>
+
+          <button type="submit" class="btn">Buscar</button>
+
+        </form>
+
+      </div>
+    </section>
+
+
+
+
+
+   
+
+    <section class="section featured-car" id="Vehículos destacados">
+      <div class="container">
+
+        <div class="title-wrapper">
+          <h2 class="h2 section-title">Vehículos destacados</h2>
+
+          <a href="#" class="featured-car-link">
+            <span>Ver más</span>
+
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </a>
+        </div>
+
+        <ul class="featured-car-list">
+
+          <li>
+            <div class="featured-car-card">
+
+              <figure class="card-banner">
+                <img src="..\imagenes\BYD2.jpg "alt="BYD TANG 2022" loading="lazy" width="440" height="300"
+                  class="w-100">
+              </figure>
+
+              <div class="card-content">
+
+                <div class="card-title-wrapper">
+                  <h3 class="h3 card-title">
+                    <a href="#">BYD TANG</a>
+                  </h3>
+
+                  <data class="year" value="2022">2022</data>
+                </div>
+
+                <ul class="card-list">
+
+                  <li class="card-list-item">
+                    <ion-icon name="people-outline"></ion-icon>
+
+                    <span class="card-item-text">7 pasajeros</span>
+                  </li>
+
+                  <li class="card-list-item">
+                    <ion-icon name="flash-outline"></ion-icon>
+
+                    <span class="card-item-text">Electrico</span>
+                  </li>
+
+                  <li class="card-list-item">
+                    <ion-icon name="speedometer-outline"></ion-icon>
+
+                    <span class="card-item-text">505 km / carga completa</span>
+                  </li>
+
+                  <li class="card-list-item">
+                    <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                    <span class="card-item-text">Automatic</span>
+                  </li>
+
+                </ul>
+
+                <div class="card-price-wrapper">
+
+                  <p class="card-price">
+                    <strong>$840</strong> / mes
+                  </p>
+
+                  <button class="btn fav-btn" aria-label="Add to favourite list">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn">Rentar</button>
+
+                </div>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="featured-car-card">
+
+              <figure class="card-banner">
+                <img src="..\imagenes\bmwx6.jpg" alt="BMW X6 Series 2021" loading="lazy" width="440" height="300"
+                  class="w-100">
+              </figure>
+
+              <div class="card-content">
+
+                <div class="card-title-wrapper">
+                  <h3 class="h3 card-title">
+                    <a href="#">BMW X6</a>
+                  </h3>
+
+                  <data class="year" value="2021">2021</data>
+                </div>
+
+                <ul class="card-list">
+
+                  <li class="card-list-item">
+                    <ion-icon name="people-outline"></ion-icon>
+
+                    <span class="card-item-text">4 Pasajeros</span>
+                  </li>
+
+                  <li class="card-list-item">
+                    <ion-icon name="flash-outline"></ion-icon>
+
+                    <span class="card-item-text">Gasoline</span>
+                  </li>
+
+                  <li class="card-list-item">
+                    <ion-icon name="speedometer-outline"></ion-icon>
+
+                    <span class="card-item-text">8.2km / 1-litre</span>
+                  </li>
+
+                  <li class="card-list-item">
+                    <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                    <span class="card-item-text">Automatic</span>
+                  </li>
+
+                </ul>
+
+                <div class="card-price-wrapper">
+
+                  <p class="card-price">
+                    <strong>$350</strong> / mes
+                  </p>
+
+                  <button class="btn fav-btn" aria-label="Add to favourite list">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn">Rentar</button>
+
+                </div>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="featured-car-card">
+
+              <figure class="card-banner">
+                <img src="..\imagenes\hilux.jpg" alt="Toyota Hilux 2018" loading="lazy" width="440"
+                  height="300" class="w-100">
+              </figure>
+
+              <div class="card-content">
+
+                <div class="card-title-wrapper">
+                  <h3 class="h3 card-title">
+                    <a href="#"></a>
+                  </h3>
+
+                  <data class="year" value="2020">2018</data>
+                </div>
+
+                <ul class="card-list">
+
+                  <li class="card-list-item">
+                    <ion-icon name="people-outline"></ion-icon>
+
+                    <span class="card-item-text">5 Pasajeros</span>
+                  </li>
+
+                  <li class="card-list-item">
+                    <ion-icon name="flash-outline"></ion-icon>
+
+                    <span class="card-item-text">DIESEL</span>
+                  </li>
+
+                  <li class="card-list-item">
+                    <ion-icon name="speedometer-outline"></ion-icon>
+
+                    <span class="card-item-text">5.3km / 1-litre</span>
+                  </li>
+
+                  <li class="card-list-item">
+                    <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                    <span class="card-item-text">Automatic</span>
+                  </li>
+
+                </ul>
+
+                <div class="card-price-wrapper">
+
+                  <p class="card-price">
+                    <strong>$300</strong> / month
+                  </p>
+
+                  <button class="btn fav-btn" aria-label="Add to favourite list">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn">Rentar</button>
+
+                </div>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="featured-car-card">
+
+              <figure class="card-banner">
+                <img src="..\imagenes\Mitsubishi.jpg"alt="Mitsubishi Montero 2019" loading="lazy" width="440"
+                  height="300" class="w-100">
+              </figure>
+
+              <div class="card-content">
+
+                <div class="card-title-wrapper">
+                  <h3 class="h3 card-title">
+                    <a href="#">Mitsubishi Montero</a>
+                  </h3>
+
+                  <data class="year" value="2020">2019</data>
+                </div>
+
+                <ul class="card-list">
+
+                  <li class="card-list-item">
+                    <ion-icon name="people-outline"></ion-icon>
+
+                    <span class="card-item-text">7 pasajeros </span>
+                  </li>
+
+                  <li class="card-list-item">
+                    <ion-icon name="flash-outline"></ion-icon>
+
+                    <span class="card-item-text">Diesel</span>
+                  </li>
+
+                  <li class="card-list-item">
+                    <ion-icon name="speedometer-outline"></ion-icon>
+
+                    <span class="card-item-text">7.7km / 1-litre</span>
+                  </li>
+
+                  <li class="card-list-item">
+                    <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                    <span class="card-item-text">Automatic</span>
+                  </li>
+
+                </ul>
+
+                <div class="card-price-wrapper">
+
+                  <p class="card-price">
+                    <strong>$420</strong> / mes
+                  </p>
+
+                  <button class="btn fav-btn" aria-label="Add to favourite list">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn">Rent now</button>
+
+                </div>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="featured-car-card">
+
+              <figure class="card-banner">
+                <img src="..\imagenes\tucson.jpg" alt="Hyundai tucson 2018" loading="lazy" width="440"
+                  height="300" class="w-100">
+              </figure>
+
+              <div class="card-content">
+
+                <div class="card-title-wrapper">
+                  <h3 class="h3 card-title">
+                    <a href="#">Hyundai Tucson 2018</a>
+                  </h3>
+
+                  <data class="year" value="2018">2018</data>
+                </div>
+
+                <ul class="card-list">
+
+                  <li class="card-list-item">
+                    <ion-icon name="people-outline"></ion-icon>
+
+                    <span class="card-item-text">5 Personas</span>
+                  </li>
+
+                  <li class="card-list-item">
+                    <ion-icon name="flash-outline"></ion-icon>
+
+                    <span class="card-item-text">Gasolina</span>
+                  </li>
+
+                  <li class="card-list-item">
+                    <ion-icon name="speedometer-outline"></ion-icon>
+
+                    <span class="card-item-text">7.6km / 1-litre</span>
+                  </li>
+
+                  <li class="card-list-item">
+                    <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                    <span class="card-item-text">Automatic</span>
+                  </li>
+
+                </ul>
+
+                <div class="card-price-wrapper">
+
+                  <p class="card-price">
+                    <strong>$280</strong> / mes
+                  </p>
+
+                  <button class="btn fav-btn" aria-label="Add to favourite list">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn">Rentar</button>
+
+                </div>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="featured-car-card">
+
+              <figure class="card-banner">
+                <img src="..\imagenes\bmw4.jpg" alt="BMW 4 Serie 2019" loading="lazy" width="440" height="300"
+                  class="w-100">
+              </figure>
+
+              <div class="card-content">
+
+                <div class="card-title-wrapper">
+                  <h3 class="h3 card-title">
+                    <a href="#">BMW 4 Series</a>
+                  </h3>
+
+                  <data class="year" value="2019">2019</data>
+                </div>
+
+                <ul class="card-list">
+
+                  <li class="card-list-item">
+                    <ion-icon name="people-outline"></ion-icon>
+
+                    <span class="card-item-text">4 Personas</span>
+                  </li>
+
+                  <li class="card-list-item">
+                    <ion-icon name="flash-outline"></ion-icon>
+
+                    <span class="card-item-text">Gasolina</span>
+                  </li>
+
+                  <li class="card-list-item">
+                    <ion-icon name="speedometer-outline"></ion-icon>
+
+                    <span class="card-item-text">7.2km / 1-litre</span>
+                  </li>
+
+                  <li class="card-list-item">
+                    <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                    <span class="card-item-text">Automatico</span>
+                  </li>
+
+                </ul>
+
+                <div class="card-price-wrapper">
+
+                  <p class="card-price">
+                    <strong>$490</strong> / mes
+                  </p>
+
+                  <button class="btn fav-btn" aria-label="Add to favourite list">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn">Rentar</button>
+
+                </div>
+
+              </div>
+
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+   
+
+  </article>
+</main>
+
+
+<%- include layouts/footer.ejs %>

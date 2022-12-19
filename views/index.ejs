@@ -1,0 +1,251 @@
+<%- include layouts/header.ejs %>
+
+<script src="./index.js"></script>
+<main>
+  <article>
+
+    
+    <!-- 
+      - #HERO
+    -->
+
+    <section class="section hero" id="home">
+      <div class="container">
+       
+        <div class="hero-content">
+          <h2 class="h1 hero-title"> Tenemos los mejores autos de Costa Rica</h2>
+
+          <p class="hero-text">
+              Desde cualquier parte del mundo nos puedes hacer reserva
+          </p>
+        </div>
+
+        <div class="hero-banner"></div>
+
+        <form action="" class="hero-form">
+
+          <div class="input-wrapper">
+            <label for="input-1" class="input-label">Carro, modelo, y marca</label>
+
+            <input type="text" name="car-model" id="input-1" class="input-field"
+              placeholder="Què tipo de carro buscas?">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="input-2" class="input-label">Monto máximo de dinero</label>
+
+            <input type="text" name="monthly-pay" id="input-2" class="input-field" placeholder="Agrega el monto en  $">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="input-3" class="input-label">Make Year</label>
+
+            <input type="text" name="year" id="input-3" class="input-field" placeholder="Add a minimal make year">
+          </div>
+
+          <button type="submit" class="btn">Buscar</button>
+
+        </form>
+
+      </div>
+    </section>
+
+
+
+    <section class="section featured-car" id="Vehículos destacados">
+      <div class="container">
+
+        <div class="title-wrapper container">
+          <video width="1000" height="500" controls>
+            <source src="http://localhost:3000/images/RentACar.mp4" type="video/mp4" autoplay="autoplay" loop="true">
+            <source src="http://localhost:3000/images/RentACar.mp4" type="video/ogg" autoplay="autoplay" loop="true">
+          </video>
+        </div>
+
+        <ul class="featured-car-list" id="listVehivulos">
+          <!-- <li>
+            <div class="featured-car-card">
+
+              <figure class="card-banner">
+                <img src="VEHICULOS.IMAGEN" alt="BYD TANG 2022" loading="lazy" width="440" height="300"
+                  class="w-100">
+              </figure>
+
+              <div class="card-content">
+
+                <div class="card-title-wrapper">
+                  <h3 class="h3 card-title">
+                    <a href="#">VEHICULOS.NOMBRE</a>
+                  </h3>
+
+                  <data class="year" value="2022">VEHICULOS.YEAR</data>
+                </div>
+
+                <ul class="card-list">
+
+                  <li class="card-list-item">
+                    <ion-icon name="people-outline"></ion-icon>
+
+                    <span class="card-item-text">VEHICULOS.PASAJEROS pasajeros</span>
+                  </li>
+
+                  <li class="card-list-item">
+                    <ion-icon name="flash-outline"></ion-icon>
+
+                    <span class="card-item-text">VEHICULOS.TIPO</span>
+                  </li>
+
+                  <li class="card-list-item">
+                    <ion-icon name="speedometer-outline"></ion-icon>
+
+                    <span class="card-item-text">VEHICULOS.KM km / carga completa</span>
+                  </li>
+
+                  <li class="card-list-item">
+                    <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                    <span class="card-item-text">VEHICULOS.COMBUSTIBLE</span>
+                  </li>
+
+                </ul>
+
+                <div class="card-price-wrapper">
+
+                  <p class="card-price">
+                    <strong>VHICULOS.PRECIO</strong> / mes
+                  </p>
+
+                  <button class="btn fav-btn" aria-label="Add to favourite list">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn">Rentar</button>
+
+                </div>
+
+              </div>
+
+            </div>
+          </li> -->
+
+          <script>
+            // IMPRIMIENDO VEHICULOS DE FORMA DINAMICA
+            const getVehiculos = async () => {
+              const response = await fetch('/',{
+                headers:{
+                  // Authorization: localStorage.getItem('jwt')
+                }
+              })
+              const vehiculos = await response.json()
+              const template = vehiculo => `
+                <li>
+                  ${vehiculo.name} ${viculo.km.type} <button data-id="${vehiculo._id}">Eliminar</button>
+                </li>
+                <li>
+                    <div class="featured-car-card">
+
+                      <figure class="card-banner">
+                        <img src="VEHICULOS.IMAGEN" alt="BYD TANG 2022" loading="lazy" width="440" height="300"
+                          class="w-100">
+                      </figure>
+
+                      <div class="card-content">
+
+                        <div class="card-title-wrapper">
+                          <h3 class="h3 card-title">
+                            <a href="#">VEHICULOS.NOMBRE</a>
+                          </h3>
+
+                          <data class="year" value="2022">VEHICULOS.YEAR</data>
+                        </div>
+
+                        <ul class="card-list">
+
+                          <li class="card-list-item">
+                            <ion-icon name="people-outline"></ion-icon>
+
+                            <span class="card-item-text">VEHICULOS.PASAJEROS pasajeros</span>
+                          </li>
+
+                          <li class="card-list-item">
+                            <ion-icon name="flash-outline"></ion-icon>
+
+                            <span class="card-item-text">VEHICULOS.TIPO</span>
+                          </li>
+
+                          <li class="card-list-item">
+                            <ion-icon name="speedometer-outline"></ion-icon>
+
+                            <span class="card-item-text">VEHICULOS.KM km / carga completa</span>
+                          </li>
+
+                          <li class="card-list-item">
+                            <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                            <span class="card-item-text">VEHICULOS.COMBUSTIBLE</span>
+                          </li>
+
+                        </ul>
+
+                        <div class="card-price-wrapper">
+
+                          <p class="card-price">
+                            <strong>VHICULOS.PRECIO</strong> / mes
+                          </p>
+
+                          <button class="btn fav-btn" aria-label="Add to favourite list">
+                            <ion-icon name="heart-outline"></ion-icon>
+                          </button>
+
+                          <button class="btn">Rentar</button>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+                 </li>
+              `
+              
+
+              const vehiculoList = document.getElementById('listVehivulos')
+              vehiculoList.innerHTML = vehiculos.map(vehiculo => template(vehiculo)).join('')
+              vehiculos.forEach(vehiculo => {
+                vehiculoNode = document.querySelector(`[data-id="${vehiculo._id}"]`)
+                vehiculoNode.onclick = async e => {
+                  await fetch(`/${vehiculo._id}`, {
+                    method: 'DELETE',
+                    header:{
+                      // Authorization: localStorage.getItem('jwt')
+                    }
+                  })
+                  vehiculoNode.parentNode.remove()
+                  alert('Eliminado con éxito')
+                }
+              })
+            }
+
+            window.onload = () => {
+              getVehiculos()
+            }
+          </script>
+
+    </section>
+
+
+
+   
+
+   
+
+
+
+
+
+   
+
+  </article>
+</main>
+
+<!-- <%- include layouts/before-footer.ejs %> -->
+<%- include layouts/footer.ejs %>
